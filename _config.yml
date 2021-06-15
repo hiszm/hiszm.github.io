@@ -37,9 +37,9 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-  disqus: false
-  disqus_url: 'https://hiszm.disqus.com/embed.js'
-  gitalk: true
+  valine: true
+  id: JSjlRzVbJ9zcr4xqXPlGy8R3-MdYXbMMI
+  key: R94NgEaiNqLNf7O5cVHrzw5V
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
