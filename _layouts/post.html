@@ -54,16 +54,10 @@
     
  
   
-    {% if site.comments.valine %}
-    <section class="post-footer-item comment">
-        <div id="vcomments"></div>
-    </section>
-    {% endif %}
+
   
   
     <section class="post-footer-item author-card">
- 
-      
       <div class="avatar">
         <img src="{{ site.avatar | relative_url }}" alt="">
       </div>
@@ -83,6 +77,14 @@
       </ul>
       {% endif %}
     </section>
+    
+    {% if site.comments.valine %}
+    <section class="post-footer-item comment">
+        <div id="vcomments"></div>
+    </section>
+    {% endif %}
+    
+    
     <section class="post-footer-item read-next">
       {% if page.next.url %}
       <div class="read-next-item">
@@ -142,8 +144,8 @@
   <script>
         new Valine({
             el: '#vcomments',
-            appId: 'site.comments.id',
-            appKey: 'site.comments.key'
+            appId: '{%s ite.comments.id %}',
+            appKey: '{% site.comments.key %}'
         })
     </script>
  
