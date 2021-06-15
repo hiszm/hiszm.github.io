@@ -27,7 +27,7 @@ footer:
 author: '孙中明'
 nickname: 'hiszm'
 bio: '微信公众号：孙中明'
-avatar: '/assets/img/profile.png'
+avatar: 'https://pic4.zhimg.com/v2-489278d75cd537fe7d0c053bb5fea942_xl.jpg'
 
 # Search
 search: true
