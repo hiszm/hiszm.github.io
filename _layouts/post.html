@@ -134,61 +134,23 @@
     });
   </script>
 
-  {% if site.comments.disqus %}
-  <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = '{{ site.comments.disqus_url }}';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  {% endif %}
-  
-    {% if site.comments.gitalk %}
-  <script>
-    /**
-  
 
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-  var gitalk = new Gitalk({
-    clientID: 'c00d1d273bd0f2bb66da', // GitHub Application Client ID
-    clientSecret: '2d58fca382f3929bdea7fd1fbcebc101060d4b71', // GitHub Application Client Secret
-    repo: 'blog-comments'      // 存放评论的仓库
-    owner: 'hiszm',          // 仓库的创建者，
-    admin: ['hiszm'],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
-    id: location.pathname,      // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
-  })
-
-  gitalk.render('gitalk-container');    // 渲染Gitalk评论组件
-  </script>
-  {% endif %}
   
+  {% if site.comments.valine %}
   
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
         new Valine({
             el: '#vcomments',
-            appId: 'JSjlRzVbJ9zcr4xqXPlGy8R3-MdYXbMMI',
-            appKey: 'R94NgEaiNqLNf7O5cVHrzw5V'
+            appId: 'site.comments.id',
+            appKey: 'site.comments.key'
         })
     </script>
+ 
+  {% endif %}
+  
+  
+ 
 
   <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
