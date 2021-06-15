@@ -54,10 +54,14 @@
     
  
   
+ 
 
+ 
   
   
     <section class="post-footer-item author-card">
+ 
+      
       <div class="avatar">
         <img src="{{ site.avatar | relative_url }}" alt="">
       </div>
@@ -78,11 +82,9 @@
       {% endif %}
     </section>
     
-
     <section class="post-footer-item comment">
         <div id="vcomments"></div>
     </section>
-
     
     
     <section class="post-footer-item read-next">
@@ -144,14 +146,14 @@
   <script>
         new Valine({
             el: '#vcomments',
-            appId: '{% site.comments.id %}',
-            appKey: '{% site.comments.key %}'
+            appId: '{{ site.comments.id }}',
+            appKey: {{'site.comments.key }}'
         })
     </script>
  
 
   
-  <!--ceshi-->
+  
  
 
   <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
