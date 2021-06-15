@@ -147,7 +147,8 @@
         new Valine({
             el: '#vcomments',
             appId: '{{ site.comments.id }}',
-            appKey: '{{ site.comments.key }}'
+            appKey: '{{ site.comments.key }}',
+            meta: ['nick','mail']
         })
     </script>
  
