@@ -57,7 +57,7 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   zhihu: '//zhihu.com/people/hiszm'
-  juejin: '//https://hiszm.blog.csdn.net/'
+  juejin: '//hiszm.blog.csdn.net/'
   github: '//github.com/hiszm'
 
 # Tags 设置标签
