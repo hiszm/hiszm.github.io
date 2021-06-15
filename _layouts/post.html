@@ -155,6 +155,8 @@
     {% if site.comments.gitalk %}
   <script>
     /**
+  
+
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
     /*
@@ -164,11 +166,10 @@
     };
     */
   var gitalk = new Gitalk({
-    clientID: '2eb19afceda708b27e64', // GitHub Application Client ID
-    clientSecret: '36aedb5a30321626a8631689fee5fafd5929f612', // GitHub Application Client Secret
-    repo: 'gitalk-comment'      // 存放评论的仓库
-    owner: 'yulilong',          // 仓库的创建者，
-    admin: ['yulilong'],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+    clientID: 'c00d1d273bd0f2bb66da', // GitHub Application Client ID
+    clientSecret: '2d58fca382f3929bdea7fd1fbcebc101060d4b71', // GitHub Application Client Secret
+    repo: 'blog-comments'      // 存放评论的仓库
+    owner: 'hiszm',          // 仓库的创建者，
     id: location.pathname,      // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
   })
 
