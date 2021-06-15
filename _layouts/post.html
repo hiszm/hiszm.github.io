@@ -53,7 +53,19 @@
   </div>
 
   <section class="author-detail">
+    
+    {% endif %}
+    </section>
+    {% if site.comments.valine %}
+    <section class="post-footer-item comment">
+        <div id="vcomments"></div>
+    </section>
+    {% endif %}
+  
+  
     <section class="post-footer-item author-card">
+ 
+      
       <div class="avatar">
         <img src="{{ site.avatar | relative_url }}" alt="">
       </div>
@@ -100,14 +112,8 @@
           <img src="{{ page.previous.cover | relative_url }}" alt="">
           {% endif %}
       </div>
-      {% endif %}
-    </section>
-    {% if site.comments.disqus %}
-    <section class="post-footer-item comment">
-        <div id="disqus_thread"></div>
-    </section>
-    {% endif %}
-    <!--CESH12-->
+       {% endif %}
+
    
     
     
