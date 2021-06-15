@@ -47,12 +47,7 @@
     </div>
     {% endif %}
     
-    {% if site.comments.gitalk %}
-    <section class="post-footer-item comment">
-       <div id="gitalk-container"></div>
-    </section>
-   
-    {% endif %}
+
     
     
   </div>
@@ -110,6 +105,12 @@
     {% if site.comments.disqus %}
     <section class="post-footer-item comment">
         <div id="disqus_thread"></div>
+    </section>
+    {% endif %}
+    
+    {% if site.comments.gitalk %}
+    <section class="post-footer-item comment">
+       <div id="gitalk-container"></div>
     </section>
     {% endif %}
     
