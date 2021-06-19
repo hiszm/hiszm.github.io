@@ -202,7 +202,7 @@ a {
 }
 
 .home-banner h2 {
-    padding-top: 190px;
+    padding-top: 50px;
     line-height: 38px;
     font-size: 42px;
     font-family: Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
@@ -1291,7 +1291,7 @@ a {
 
 @media screen and (min-width:1920px) {
     .home-banner {
-        height: 600px
+        height: 165px
     }
     .home-banner h2 {
         padding-top: 50px;
@@ -1435,7 +1435,7 @@ a {
 
 @media screen and (max-width:500px) {
     .home-banner {
-        height: 400px
+        height: 165px
     }
     .home-banner h2 {
         padding-top: 50px;
