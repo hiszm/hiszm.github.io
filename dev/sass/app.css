@@ -151,6 +151,7 @@ a {
     margin-top: 8px; }
 
 .banner-theme-default {
+  height: 165px;
   background: -webkit-linear-gradient(0deg, #3CD5FF, #007AFF);
   background: -o-linear-gradient(0deg, #3CD5FF, #007AFF);
   background: -moz-linear-gradient(0deg, #3CD5FF, #007AFF);
