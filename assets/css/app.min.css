@@ -708,7 +708,7 @@ a {
 }
 
 .post-header {
-    height: 300px;
+    height: 165px;
     text-align: center;
 }
 
@@ -733,7 +733,7 @@ a {
 }
 
 .post-header .post-tags {
-    margin: 150px 0 16px
+    margin: 50px 0 16px
 }
 
 .post-header .post-tags .post-tag {
@@ -1492,7 +1492,7 @@ a {
     }
     .post-header {
         padding: 0;
-        height: 360px
+        height: 240px
     }
     .post-wrapper .post-tags {
         margin: 100px 0 8px
